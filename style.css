@@ -6,5 +6,60 @@
 
 /* navbar styling */
 .navbar-expand-lg{
-    z-index: 111111;
+    z-index: 11;
 }
+.navbar-brand{
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-right: 5px;
+}
+.navbar-brand:hover{
+    color: white;
+}
+
+.nav-item .nav-link{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+nav-link:hover{
+   
+    transform:scale(1.2);
+    transition: ease-in-out .2s;
+    z-index: 111;
+    color: rgb(194, 106, 0);
+}
+.nav-link::after{
+    content: '';
+    height: 2.5px;
+    width: 100%;
+    display: block;
+    background-color: rgb(2, 3, 2);
+    bottom: -8;
+    transform: translateX(2px);
+    transition: all .5s;
+   opacity: 0;
+}
+
+
+.nav-link:hover::after{
+    opacity: 1;
+    pointer-events: none;
+}
+.carousel-item{
+    height: 99vh;
+   z-index: -55;
+   
+}
+.offcanvas{
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+/* .carouelphoto{
+    overlay: rgba(0,0,0,.5);
+} */
