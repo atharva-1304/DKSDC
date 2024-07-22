@@ -81,6 +81,19 @@
   font-size: 18px;
   transition: ease 0.5s;
 }
+
+.btn{
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 50px;
+  padding: 0;
+  width: 50px;
+font-size: 25PX;
+font-weight: 700;
+
+}
+
 /* .carousel css */
 
 .carousel-item::before {
