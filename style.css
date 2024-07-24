@@ -11,58 +11,69 @@
 .navbar-expand-lg {
   z-index: 11;
 }
+.navbar {
+  transition: all 0.3s;
+}
 
 .navbar-brand {
   color: white;
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   margin-right: 5px;
+  transition: all 0.3s;
 }
 .navbar-brand:hover {
   color: white;
 }
+.offcanvas-header {
+  color: #ffffff;
+}
 
-.nav-item .nav-link {
+.navlinks {
   font-size: 18px;
   font-family: sans-serif;
   font-weight: 500;
   color: white;
-}
-
-.nav-link::after {
-  content: "";
-  height: 2.5px;
-  width: 100%;
-  display: block;
-  background-color: rgb(194, 106, 0);
-  bottom: -8;
-  transform: translateX(2px);
+  font-weight: 500;
   transition: all 0.5s;
-  opacity: 0;
 }
 
-.nav-link:hover::after {
-  opacity: 1;
-  pointer-events: none;
+.navlinks:hover {
+  color: #ffffff;
+  text-decoration: underline 2px;
+  transform: scale(1.2);
 }
-.carousel-item {
-  height: 99vh;
-  z-index: -55;
+
+.navlinksScroll{
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: black;
+  font-weight: 500;
+  transition: all 0.5s;
+
 }
+.navlinksScroll:hover{
+  color: black;
+  text-decoration: underline 2px;
+  transform: scale(1.2);
+}
+
 .offcanvas {
   background: transparent;
- 
 }
 
-@media (max-width:999px) {
-  .offcanvas{
-    backdrop-filter: blur(10px); 
+@media (max-width: 999px) {
+  .offcanvas {
+    backdrop-filter: blur(10px);
   }
-  
 }
-
+.scrollNav {
+  background-color: white;
+  color: black;
+}
 /* navbar dropdown */
 .dropdown-menu {
   background: transparent;
@@ -82,16 +93,20 @@
   transition: ease 0.5s;
 }
 
-.btn{
+.btn {
   display: flex;
   align-items: center;
   color: white;
   height: 50px;
   padding: 0;
   width: 50px;
-font-size: 25PX;
-font-weight: 700;
+  font-size: 25px;
+  font-weight: 700;
+}
 
+/* scroll navbar css */
+.navbarScroll {
+  background-color: white;
 }
 
 /* .carousel css */
@@ -108,11 +123,10 @@ font-weight: 700;
   opacity: 0.5;
 }
 
-.carousel-item > img{
+.carousel-item > img {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 /* footer styling  */
 footer {
@@ -130,7 +144,6 @@ footer {
   color: black;
 }
 li {
-
   list-style: none;
   color: black;
 }

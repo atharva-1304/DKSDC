@@ -26,13 +26,14 @@
     <link rel="icon" type="image" href="./images/favicon.png" />
     <title>DKSDC</title>
   </head>
-  <body style="background-color: black">
+  <body >
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg fixed-top py-0">
-      <div class="container-fluid pe-4 navBg" style="height: 70px">
-        <a class="navbar-brand" href="#"
+    <nav class="navbar navbar-expand-lg fixed-top py-0 ">
+      <div class="container-fluid pe-4 my-1 navBg" style="height: 70px">
+        <a class="navbar-brand " href="#"
           ><img
-            class="ps-3 pt-1"
+            id="brandImg"
+            class="ps-2 navbrand"
             style="height: 70px"
             src="./images/navbarbrandtop.png"
             alt=""
@@ -47,7 +48,7 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"
-            ><i class="fa-solid fa-bars fs-1" style="color: #ffffff"></i
+            ><i class="fa-solid fa-bars fs-1" id="toggler-icon" ></i
           ></span>
         </button>
         <div
@@ -56,7 +57,7 @@
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
-          <div class="offcanvas-header" style="color: white">
+          <div class="offcanvas-header" >
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HOME</h5>
             <button
               type="button"
@@ -71,17 +72,17 @@
               style="background-color: transparent"
             >
               <li class="nav-item">
-                <a class="nav-link px-4" href="#">ABOUT US</a>
+                <a class="nav-link navlinks px-4" href="#">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-4" href="#">COURSES</a>
+                <a class="nav-link navlinks px-4" href="#">COURSES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-4" href="#">ADMISSION</a>
+                <a class="nav-link navlinks px-4" href="#">ADMISSION</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link px-4 dropdown-toggle"
+                  class="nav-link navlinks px-4 dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -173,7 +174,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
-            <img src="./images/favicon.png" class="img-thumbnail" alt="..." />
+            <img src="./images/navbarbrandscroll.png" class="img-thumbnail" alt="..." />
           </div>
           <div class="col-lg-3 col-6">
             <ul class="p-0">
