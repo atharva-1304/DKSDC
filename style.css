@@ -14,6 +14,13 @@
 .navbar {
   transition: all 0.3s;
 }
+.navbodyScroll{
+  height: 60px;
+  transition: all .3s;
+}
+.navbody{
+  height: 70px;
+}
 
 .navbar-brand {
   color: white;
@@ -128,6 +135,38 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+ /* our courses scc  */
+#couses-heding{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;  
+  text-transform: uppercase;
+  text-decoration: underline 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer styling  */
 footer {
   background-color: white;
