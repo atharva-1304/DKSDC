@@ -14,19 +14,6 @@
 .navbar {
   transition: all 0.3s;
 }
-<<<<<<< HEAD
-/* scroll navbar css */
-.navbarScroll {
-  background-color: white;
-=======
-.navbodyScroll {
-  height: 60px;
-  transition: all 0.3s;
-}
-.navbody {
-  height: 70px;
->>>>>>> edd7dd4a359da734c513a2dbc1601ee751eff852
-}
 
 .navbar-brand {
   color: white;
@@ -61,11 +48,8 @@
   text-decoration: underline 2px;
   transform: scale(1.2);
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> edd7dd4a359da734c513a2dbc1601ee751eff852
-.navlinksScroll {
+.navlinksScroll{
   font-size: 18px;
   font-family: sans-serif;
   font-weight: 500;
@@ -82,25 +66,11 @@
   .offcanvas {
     backdrop-filter: blur(10px);
   }
-<<<<<<< HEAD
-  .navlinksScroll:hover {
-    color: black;
-    text-decoration: underline 2px;
-    transform: none;
-  }
-  .navlinks:hover {
-    color: #ffffff;
-    text-decoration: underline 2px;
-    transform: none;
-=======
-  .navlinksScroll {
-    color: rgb(255, 255, 255);
-    text-decoration: underline 2px;
-    transform: scale(1.2);
->>>>>>> edd7dd4a359da734c513a2dbc1601ee751eff852
-  }
 }
-
+.scrollNav {
+  background-color: white;
+  color: black;
+}
 /* navbar dropdown */
 .dropdown-menu {
   background: transparent;
@@ -150,29 +120,6 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
-<<<<<<< HEAD
-=======
-/* our courses scc  */
-#couses-heding {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-decoration: underline 2px solid black;
-}
-.cardimg{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  transition: all .3s ;
-  visibility: hidden;
-}
-
-
-
-
->>>>>>> edd7dd4a359da734c513a2dbc1601ee751eff852
 /* footer styling  */
 footer {
   background-color: white;
