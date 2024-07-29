@@ -14,11 +14,11 @@
 .navbar {
   transition: all 0.3s;
 }
-.navbodyScroll{
+.navbodyScroll {
   height: 60px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.navbody{
+.navbody {
   height: 70px;
 }
 
@@ -53,16 +53,15 @@
   transform: scale(1.2);
 }
 
-.navlinksScroll{
+.navlinksScroll {
   font-size: 18px;
   font-family: sans-serif;
   font-weight: 500;
   color: black;
   font-weight: 500;
   transition: all 0.5s;
-
 }
-.navlinksScroll:hover{
+.navlinksScroll:hover {
   color: black;
   text-decoration: underline 2px;
   transform: scale(1.2);
@@ -75,6 +74,11 @@
 @media (max-width: 999px) {
   .offcanvas {
     backdrop-filter: blur(10px);
+  }
+  .navlinksScroll {
+    color: rgb(255, 255, 255);
+    text-decoration: underline 2px;
+    transform: scale(1.2);
   }
 }
 .scrollNav {
@@ -136,33 +140,21 @@
   background-repeat: no-repeat;
 }
 
- /* our courses scc  */
-#couses-heding{
+/* our courses scc  */
+#couses-heding {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2rem;  
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
   text-transform: uppercase;
   text-decoration: underline 2px solid black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cardimg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all .3s ;
+  visibility: hidden;
+}
 
 
 

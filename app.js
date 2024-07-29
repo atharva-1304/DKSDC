@@ -42,3 +42,9 @@ window.addEventListener("scroll", () => {
 
   }
 });
+// navbar script end
+// courses cards start
+const card = document.querySelector('.card')
+const cardImg=document.querySelector('.cardimg');
+
+  card.addEventListener("mouse")
