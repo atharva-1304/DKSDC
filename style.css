@@ -14,7 +14,16 @@
 .navbar {
   transition: all 0.3s;
 }
-
+.scrollNav {
+  background-color: white;
+  color: black;
+}
+.offcanvas {
+  background: transparent;
+}
+.offcanvas-header {
+  color: #ffffff;
+}
 .navbar-brand {
   color: white;
   text-decoration: none;
@@ -26,12 +35,6 @@
 }
 .navbar-brand:hover {
   color: white;
-}
-.offcanvas {
-  background: transparent;
-}
-.offcanvas-header {
-  color: #ffffff;
 }
 
 .navlinks {
@@ -48,11 +51,11 @@
   text-decoration: underline 2px;
   transform: scale(1.2);
 }
-.navbarScroll{
+.navbarScroll {
   background-color: white;
 }
 
-.navlinksScroll{
+.navlinksScroll {
   font-size: 18px;
   font-family: sans-serif;
   font-weight: 500;
@@ -65,15 +68,6 @@
   transform: scale(1.2);
 }
 
-@media (max-width: 999px) {
-  .offcanvas {
-    backdrop-filter: blur(10px);
-  }
-}
-.scrollNav {
-  background-color: white;
-  color: black;
-}
 /* navbar dropdown */
 .dropdown-menu {
   background: transparent;
@@ -103,6 +97,12 @@
   font-size: 25px;
   font-weight: 700;
 }
+/* navbar media que */
+@media (max-width: 999px) {
+  .offcanvas {
+    backdrop-filter: blur(10px);
+  }
+}
 
 /* .carousel css */
 
@@ -123,6 +123,25 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* why us sectioon css */
+
+@media (max-width: 767.98px) {
+  .whyUsIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .whyUSHeader{
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+ }
+
+
+
 /* footer styling  */
 footer {
   background-color: white;
