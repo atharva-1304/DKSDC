@@ -102,6 +102,13 @@
   .offcanvas {
     backdrop-filter: blur(10px);
   }
+ .navbarScroll{
+  color: white;
+ }
+  
+  .navlinksScroll{
+    color: #ffffff;
+  }
 }
 
 /* .carousel css */
