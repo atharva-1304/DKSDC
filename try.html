@@ -1,101 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Hover Effect</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <style>
-        .card {
-            position: relative;
-            overflow: hidden;
-        }
-        .card-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .card:hover .card-overlay {
-            opacity: 1;
-        }
-        .card .card-body, .card .card-img-top {
-            transition: opacity 0.3s;
-        }
-        .card:hover .card-body, .card:hover .card-img-top {
-            opacity: 0.3;
-        }
+      .card {
+        background-image: url(./images/Mechatronics_cards.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50vh;
+        transition: ease-out 0.5s;
+      }
+
+      .card-body {
+        position: absolute;
+        bottom: 0;
+        color: rgb(0, 0, 0);
+      }
+      .card:hover {
+        transition: 0.2s all ease-out;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        top: 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <h2 id="couses-heding" class="mt-5">
-          Learning <br />
-          Opportunities
-        </h2>
-        <div class="container d-flex justify-content-evenly align-items-center">
-          <div class="row">
-            <div class="col-lg-3 col-sm-6 col-12 d-flex justify-content-evenly align-items-center mt-4">
-              <div class="card" style="width: 18rem">
-                <img src="./images/Mechatronics_cards.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h6>Mechatronics</h6>
-                  <p class="card-text">Revolutionize Your Skills with Automation & Mechatronics</p>
-                </div>
-                <div class="card-overlay">
-                  <button class="btn btn-light">More Info</button>
-                </div>
+      <div class="container d-flex justify-content-evenly align-items-center">
+        <div class="row">
+          <div
+            class="col-lg-3 col-sm-6 col-12 d-flex justify-content-evenly align-items-center mt-4"
+          >
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h6>Mechatronics</h6>
+                <p class="card-text">
+                  Revolutionize Your Skills with Automation & Mechatronics
+                </p>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-12 d-flex justify-content-evenly align-items-center mt-4">
-              <div class="card" style="width: 18rem">
-                <img src="./images/data-sci-card-1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h6>Data Science</h6>
-                  <p class="card-text">Data Science Excellence: From Basics to Advanced</p>
-                </div>
-                <div class="card-overlay">
-                  <button class="btn btn-light">More Info</button>
-                </div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6 col-12 d-flex justify-content-evenly align-items-center mt-4"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="./images/data-sci-card-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>Data Science</h6>
+                <p class="card-text">
+                  Data Science Excellence: From Basics to Advanced
+                </p>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-12 d-flex justify-content-evenly align-items-center mt-4">
-              <div class="card" style="width: 18rem">
-                <img src="./images/software-dev-card-1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h6>SOFTWARE DEVELOPMENT</h6>
-                  <p class="card-text">Unlock Your Potential in Software Development</p>
-                </div>
-                <div class="card-overlay">
-                  <button class="btn btn-light">More Info</button>
-                </div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6 col-12 d-flex justify-content-evenly align-items-center mt-4"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="./images/software-dev-card-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>SOFTWARE DEVELOPMENT</h6>
+                <p class="card-text">
+                  Unlock Your Potential in Software Development
+                </p>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-12 d-flex justify-content-evenly align-items-center mt-4">
-              <div class="card" style="width: 18rem">
-                <img src="./images/tool-card-card1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h6>TOOL Manufacturing</h6>
-                  <p class="card-text">TOOL Manufacturing: Learn, Build, Succeed</p>
-                </div>
-                <div class="card-overlay">
-                  <button class="btn btn-light">More Info</button>
-                </div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6 col-12 d-flex justify-content-evenly align-items-center mt-4"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="./images/tool-card-card1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>TOOL Manufacturing</h6>
+                <p class="card-text">
+                  TOOL Manufacturing: Learn, Build, Succeed
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>

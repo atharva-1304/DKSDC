@@ -52,7 +52,7 @@
   transform: scale(1.2);
 }
 .navbarScroll {
-  background-color: white;
+   background-image: linear-gradient(to bottom,#ffffff,50%,rgb(222, 234, 255));
 }
 
 .navlinksScroll {
