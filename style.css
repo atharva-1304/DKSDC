@@ -52,7 +52,12 @@
   transform: scale(1.2);
 }
 .navbarScroll {
-   background-image: linear-gradient(to bottom,#ffffff,50%,rgb(222, 234, 255));
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    50%,
+    rgb(222, 234, 255)
+  );
 }
 
 .navlinksScroll {
@@ -102,11 +107,11 @@
   .offcanvas {
     backdrop-filter: blur(10px);
   }
- .navbarScroll{
-  color: white;
- }
-  
-  .navlinksScroll{
+  .navbarScroll {
+    color: white;
+  }
+
+  .navlinksScroll {
     color: #ffffff;
   }
 }
@@ -130,27 +135,89 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+/* cards css */
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(2.1);
+  transition: all .s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.center-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .center-btn {
+  opacity: 1;
+}
+
+.backtwo {
+  background-image: url(./images/Mechatronics_cards.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  visibility: hidden;
+}
+
+.card:hover .backtwo {
+  visibility: visible;
+}
 
 /* why us sectioon css */
 
 @media (max-width: 767.98px) {
-  .whyUsIcon{
+  .whyUsIcon {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .whyUSHeader{
-   
+  .whyUSHeader {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .whyUsHeader{
+  .whyUsHeader {
     text-align: center;
   }
- }
-
-
+}
 
 /* footer styling  */
 footer {
